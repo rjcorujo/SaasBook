@@ -32,8 +32,11 @@ end
 
 module Enumerable
   def palindrome?()
-    rev = self.reverse
-    return rev == self
+    if self.respond_to?('reverse')
+      return self == self.reverse
+    else
+      return false
+    end
   end
 end
 

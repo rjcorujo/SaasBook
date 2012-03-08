@@ -24,6 +24,11 @@ assert("Weird characters String Palindrome") do
   "ho ^l - a% loh".palindrome?
 end
 
+assert("Hash palindrome") do
+  {:k1=>1,:k2=>3}.palindrome?
+  true
+end
+
 
 assert("Collection palindrome") do
   [1,2,3,2,1].palindrome?
