@@ -1,4 +1,4 @@
-#testing git
+
 
 def palindrome?(string)
   str = string.gsub(/\W+/,'')
