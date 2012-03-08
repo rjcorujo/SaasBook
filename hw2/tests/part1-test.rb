@@ -29,7 +29,10 @@ assert("Hash palindrome") do
   true
 end
 
-
-assert("Collection palindrome") do
+assert("array palindrome") do
   [1,2,3,2,1].palindrome?
+end
+
+assert("Collection non-array palindrome") do
+  (1..3).palindrome?
 end

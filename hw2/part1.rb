@@ -32,8 +32,10 @@ end
 
 module Enumerable
   def palindrome?()
-    if self.respond_to?('reverse')
-      return self == self.reverse
+    if self.respond_to?('each')
+      temp = []
+      self.each {|x| temp += [x]}
+      return temp == temp.reverse
     else
       return false
     end
